@@ -1,0 +1,86 @@
+[
+    {
+        "nome": "JavaScript",
+        "descricao": "JavaScript é uma linguagem de programação leve, interpretada e baseada em objetos. É amplamente utilizada para desenvolvimento web, permitindo a criação de páginas interativas e dinâmicas.",
+        "ano": 1995,
+        "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+        "categoria": "Front-end"
+    },
+    {
+        "nome": "Python",
+        "descricao": "Python é uma linguagem de programação de alto nível, interpretada e de propósito geral. É conhecida por sua sintaxe clara e legibilidade, sendo amplamente utilizada em diversas áreas, como desenvolvimento web, ciência de dados e automação.",
+        "ano": 1991,
+        "link": "https://docs.python.org/pt-br/3.15/",
+        "categoria": "Back-end"
+    },
+    {
+        "nome": "HTML",
+        "descricao": "HTML (HyperText Markup Language) é a linguagem de marcação padrão para criar páginas da web e aplicações web. Estrutura o conteúdo da web.",
+        "ano": 1993,
+        "link": "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
+        "categoria": "Front-end"
+    },
+    {
+        "nome": "CSS",
+        "descricao": "CSS (Cascading Style Sheets) é uma linguagem de folha de estilo usada para descrever a apresentação de um documento escrito em uma linguagem de marcação como HTML.",
+        "ano": 1996,
+        "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
+        "categoria": "Front-end"
+    },
+    {
+        "nome": "TypeScript",
+        "descricao": "TypeScript é um superconjunto de JavaScript que adiciona tipagem estática opcional à linguagem. É desenvolvido e mantido pela Microsoft.",
+        "ano": 2012,
+        "link": "https://www.typescriptlang.org/docs/",
+        "categoria": "Front-end"
+    },
+    {
+        "nome": "React",
+        "descricao": "React é uma biblioteca JavaScript de código aberto para construir interfaces de usuário ou componentes de UI. É mantido pelo Facebook e uma comunidade de desenvolvedores individuais e empresas.",
+        "ano": 2013,
+        "link": "https://react.dev/",
+        "categoria": "Front-end"
+    },
+    {
+        "nome": "Java",
+        "descricao": "Java é uma linguagem de programação orientada a objetos, de propósito geral, e uma plataforma de computação. É amplamente utilizada para construir aplicações empresariais robustas.",
+        "ano": 1995,
+        "link": "https://docs.oracle.com/en/java/",
+        "categoria": "Back-end"
+    },
+    {
+        "nome": "PHP",
+        "descricao": "PHP é uma linguagem de script de propósito geral especialmente adequada para o desenvolvimento web. Pode ser embutida em HTML e é uma das linguagens mais populares para criar sites dinâmicos.",
+        "ano": 1995,
+        "link": "https://www.php.net/manual/pt_BR/",
+        "categoria": "Back-end"
+    },
+    {
+        "nome": "C#",
+        "descricao": "C# (pronuncia-se 'C sharp') é uma linguagem de programação moderna, orientada a objetos e de tipo seguro, desenvolvida pela Microsoft. É amplamente usada para desenvolver aplicações para Windows, web e jogos com a engine Unity.",
+        "ano": 2000,
+        "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/",
+        "categoria": "Back-end"
+    },
+    {
+        "nome": "Ruby",
+        "descricao": "Ruby é uma linguagem de programação dinâmica, de código aberto, com foco na simplicidade e produtividade. Sua sintaxe elegante é natural para ler e fácil de escrever. É a base do popular framework web Ruby on Rails.",
+        "ano": 1995,
+        "link": "https://www.ruby-lang.org/pt/documentation/",
+        "categoria": "Back-end"
+    },
+    {
+        "nome": "Go",
+        "descricao": "Go, também conhecida como Golang, é uma linguagem de programação de código aberto criada pelo Google. É compilada, concorrente e possui uma sintaxe simples, sendo ideal para microsserviços e processamento paralelo.",
+        "ano": 2009,
+        "link": "https://go.dev/doc/",
+        "categoria": "Back-end"
+    },
+    {
+        "nome": "SQL",
+        "descricao": "SQL (Structured Query Language) é uma linguagem padrão para gerenciar e manipular bancos de dados relacionais. É usada para consultar, inserir, atualizar e deletar dados.",
+        "ano": 1974,
+        "link": "https://www.w3schools.com/sql/",
+        "categoria": "Back-end"
+    }
+]
