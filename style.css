@@ -15,7 +15,7 @@ body {
     margin: 0; /* Remove a margem padrão do body */
     background: var(--bg-color); /* Define a cor de fundo usando uma variável */
     color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
-    font-family:"Bona Nova SC", serif;; /* Define a família da fonte */
+    font-family: "Quicksand", sans-serif; /* Define a família da fonte */
 }
 
 header {

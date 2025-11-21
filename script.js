@@ -1,6 +1,7 @@
 // Variável global para armazenar os dados das linguagens
 const cardContainer = document.querySelector(".card-container");
 const campoBusca = document.querySelector("header .search-container input");
+const botaoBusca = document.getElementById("botao-busca");
 let dados = [];
 
 /**
@@ -56,3 +57,14 @@ function iniciarBusca() {
 
 // Chama a função para carregar os dados assim que a página é carregada
 carregarDados();
+
+// Adiciona um "escutador de eventos" para o clique no botão de busca
+botaoBusca.addEventListener("click", iniciarBusca);
+
+// Adiciona um "escutador de eventos" para a tecla "Enter" no campo de busca
+campoBusca.addEventListener("keyup", (event) => {
+  // Verifica se a tecla pressionada foi a "Enter"
+  if (event.key === "Enter") {
+    iniciarBusca();
+  }
+});
