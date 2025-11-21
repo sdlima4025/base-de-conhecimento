@@ -81,4 +81,4 @@ Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes
 
 ---
 
-Feito por: sdlima.
+Feito em parceria na imersão Alura10 sdlima.
