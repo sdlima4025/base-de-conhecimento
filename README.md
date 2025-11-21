@@ -82,3 +82,10 @@ Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes
 ---
 
 Feito em parceria na imersão Alura10 sdlima.
+
+
+
+
+
+https://github.com/user-attachments/assets/ac403b2f-bb8e-4c51-8349-38c708e96fe3
+
