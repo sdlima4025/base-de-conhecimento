@@ -85,6 +85,7 @@ Feito em parceria na imersão Alura10 sdlima.
 
 
 https://sdlima4025.github.io/base-de-conhecimento/
+<img width="2431" height="1227" alt="projetoFinalCard" src="https://github.com/user-attachments/assets/84168f45-3425-4f64-a283-79a33dfe06ba" />
 
 
 
