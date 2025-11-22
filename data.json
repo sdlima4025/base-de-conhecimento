@@ -1,4 +1,16 @@
 [
+   {
+    "nome": "JavaScript",
+    "descricao": " linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e funcional), amplamente utilizada para desenvolvimento web.",
+    "data_criacao": "1995",
+    "link": "https://developer.mozilla.org/pt-BR/docs/Web/API/Element/classList",
+    "tags": [
+      "linguagem de programação",
+      "backend",
+      "concorrência",
+      "golang"
+    ]
+  },
   {
     "nome": "Go",
     "descricao": "Linguagem de programação compilada e estaticamente tipada desenvolvida pelo Google, focada em simplicidade e concorrência eficiente.",

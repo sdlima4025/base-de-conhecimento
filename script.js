@@ -36,7 +36,7 @@ function reiderizarCards(linguagens) {
     // Criar nome da imagem em minúsculas com espaços removidos para padrão src
     const imageName = linguagem.nome.toLowerCase().replace(/\s+/g, '') + '.png';
     article.innerHTML = `
-      <img class="card-image" src="imagens/${imageName}" alt="Logo ${linguagem.nome}" onerror="this.onerror=null;this.src='imagens/placeholder.png';" />
+      <img class="card-image" src="imagens/${imageName}" alt="Logo ${linguagem.nome}" onerror="this.onerror=null;this.src='imagens/codigo.png';" />
       <div class="card-content">
         <h2>${linguagem.nome}</h2>
         <p><strong>Ano de criação:</strong> ${linguagem.data_criacao}</p>
