@@ -33,11 +33,16 @@ function reiderizarCards(linguagens) {
   for (let linguagem of linguagens) {
     const article = document.createElement("article");
     article.classList.add("card");
+    // Criar nome da imagem em minúsculas com espaços removidos para padrão src
+    const imageName = linguagem.nome.toLowerCase().replace(/\s+/g, '') + '.png';
     article.innerHTML = `
-      <h2>${linguagem.nome}</h2>
-      <p><strong>Ano de criação:</strong> ${linguagem.data_criacao}</p>
-      <p>${linguagem.descricao}</p>
-      <a href="${linguagem.link}" target="_blank">Acessar documentação</a>
+      <img class="card-image" src="imagens/${imageName}" alt="Logo ${linguagem.nome}" onerror="this.onerror=null;this.src='imagens/placeholder.png';" />
+      <div class="card-content">
+        <h2>${linguagem.nome}</h2>
+        <p><strong>Ano de criação:</strong> ${linguagem.data_criacao}</p>
+        <p>${linguagem.descricao}</p>
+        <a href="${linguagem.link}" target="_blank" rel="noopener noreferrer">Acessar documentação</a>
+      </div>
     `;
     cardContainer.appendChild(article);
   }
