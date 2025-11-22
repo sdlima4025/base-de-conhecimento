@@ -38,7 +38,7 @@ function reiderizarCards(linguagens) {
     article.innerHTML = `
       <img class="card-image" src="imagens/${imageName}" alt="Logo ${linguagem.nome}" onerror="this.onerror=null;this.src='imagens/codigo.png';" />
       <div class="card-content">
-        <h2>${linguagem.nome}</h2>
+        <h3>${linguagem.nome}</h3>
         <p><strong>Ano de criação:</strong> ${linguagem.data_criacao}</p>
         <p>${linguagem.descricao}</p>
         <a href="${linguagem.link}" target="_blank" rel="noopener noreferrer">Acessar documentação</a>
