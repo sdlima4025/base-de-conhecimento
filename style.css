@@ -46,10 +46,14 @@ header h1 {
 }
 
 .search-container {
-    display: flex; /* Habilita o flexbox para alinhar input e botão */
-    flex-grow: 1; /* Permite que o container cresça para ocupar espaço */
-    min-width: 250px; /* Largura mínima para evitar que fique muito pequeno */
-    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    display: flex;
+    flex-grow: 1;
+    min-width: 250px;
+    justify-content: flex-end;
+    align-items: center; /* Alinhamento vertical centralizado */
+    gap: 0.5rem;
+    max-width: 30rem;
+    flex-direction: row; /* Garante que os itens fiquem em linha */
 }
 
 header .search-container input {
@@ -60,10 +64,9 @@ header .search-container input {
     font-family: inherit; /* Herda a família da fonte do elemento pai */
     font-size: 1.2rem; /* Tamanho da fonte */
     transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
-    width: 100%; /* Faz o input ocupar o espaço disponível no container */
-    max-width: 30rem; /* Largura máxima do input */
+    flex-grow: 1; /* Permite que o input ocupe o espaço disponível */
+    min-width: 200px; /* Largura mínima para o input */
     color: var(--secondary-color); /* Cor do texto digitado */
-    margin-right: .5rem; /* Margem à direita */
 }
 
 header .search-container input::placeholder {
@@ -115,7 +118,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -251,7 +254,6 @@ article a {
     text-decoration: none; /* Remove o sublinhado padrão */
     font-weight: 200; /* Peso da fonte */
     transition: color 0.2s; /* Transição suave para a cor */
-    
 }
 
 article a:hover {
@@ -259,15 +261,15 @@ article a:hover {
 }
 
 .footer {
-    position: absolute; /* Posicionamento absoluto em relação ao elemento pai posicionado */
-    bottom: 0; /* Alinha na parte inferior */
-    left: 0; /* Alinha à esquerda */
-    width: 100%; /* Largura total */
-    color: var(--tertiary-color); /* Cor do texto */
-    background-color: var(--bg-color); /* Cor de fundo */
-    padding: 15px 20px; /* Espaçamento interno */
-    border-top: 1px solid #3c4043; /* Borda superior */
-    font-size: 0.8rem; /* Tamanho da fonte */
+    position: relative; /* Posição relativa para o rodapé */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: var(--tertiary-color);
+    background-color: var(--bg-color);
+    padding: 15px 20px;
+    border-top: 1px solid #3c4043;
+    font-size: 0.8rem;
 }
 
 .footer-location {
@@ -294,76 +296,60 @@ article a:hover {
 }
 
 @media (max-width: 768px) {
-    .header-content { /* Estilos para telas com largura máxima de 768px */
-        flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
-        align-items: center; /* Centraliza os itens na coluna */
-        gap: 1rem; /* Espaçamento entre título e busca */
+    header {
+        padding: 1rem;
     }
 
-    header h1 { /* Estilos para o h1 no cabeçalho em telas menores */
-        text-align: center; /* Centraliza o texto */
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem; /* Aumenta o espaço para melhor visualização */
+    }
+
+    header h1 {
+        text-align: center;
     }
 
     .search-container {
-        width: 100%; /* Ocupa toda a largura disponível */
-        justify-content: center; /* Centraliza o input e o botão */
+        width: 100%;
+        justify-content: center;
+        flex-direction: column; /* Em telas menores, os itens ficam em coluna */
     }
 
-    header .search-container input { /* Estilos para o input em telas menores */
-        font-size: 1.2rem; /* Reduz o tamanho da fonte */
-        max-width: none; /* Remove a largura máxima para que o flex funcione */
+    header .search-container input {
+        font-size: 1.1rem; /* Ajuste fino no tamanho da fonte */
+        width: 100%; /* O input ocupa a largura total */
     }
 
-    main { /* Estilos para o main em telas menores */
-        padding: 0 1rem; /* Adiciona espaçamento lateral */
+    #botao-busca {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+        width: 100%; /* O botão ocupa a largura total */
     }
 
-    article:hover { /* Estilos para o article em telas menores */
-        transform: none; /* Remove o efeito de escala ao passar o mouse */
+    main {
+        padding: 0 1rem;
+    }
+
+    article:hover {
+        transform: none;
     }
 }
 
 @media (max-width: 480px) {
-    header h1 { /* Estilos para o h1 em telas com largura máxima de 480px */
-        font-size: 1.2rem; /* Reduz ainda mais o tamanho da fonte */
-        max-width: 70%; /* Define uma largura máxima */
-        word-wrap: break-word; /* Permite a quebra de palavras longas */
-    }    
+    header h1 {
+        font-size: 1.2rem;
+        word-wrap: break-word;
+    }
 
-    header .search-container input, /* Estilos para o input e seu placeholder em telas muito pequenas */
+    header .search-container input,
     header .search-container input::placeholder {
-        font-size: 1rem; /* Reduz o tamanho da fonte */
+        font-size: 1rem;
     }
 
-    article h2 { /* Estilos para o h2 do article em telas muito pequenas */
-        font-size: 1.3rem; /* Reduz o tamanho da fonte */
+    #botao-busca {
+        margin-top: 0.5rem;
     }
-
-    .footer { /* Estilos para o rodapé em telas muito pequenas */
-        display: none; /* Oculta o rodapé */
-    }
-
-button { /* Estilos para o botão em telas muito pequenas */
-    margin-top: 1rem; /* Adiciona margem no topo */
-}
-
-/* Estilos para tags dentro dos cards */
-.tags-container {
-    margin-top: 0.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-}
-
-.tag-badge {
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-    padding: 0.2rem 0.6rem;
-    border-radius: 1rem;
-    font-size: 0.85rem;
-    font-weight: 600;
-    user-select: none;
-}
 }
 
 /* Define a animação de entrada dos cards */
