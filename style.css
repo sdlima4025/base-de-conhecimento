@@ -106,7 +106,7 @@ main {
 
 .card {
     width: 300px;
-    height: 300px;
+    min-height: 300px; /* Usamos min-height para permitir que o card cresça */
     background-color: #1e1e2f; /* background more dark */
     border-radius: 8px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.7);
@@ -120,6 +120,7 @@ main {
     color: #e0e0f0; /* light text color */
     /* Adiciona a animação de entrada */
     animation: fadeInUp 0.5s ease-out forwards;
+    transition: all 0.4s ease; /* Transição suave para o hover */
 }
 
 .card-content > h2 {
@@ -153,12 +154,36 @@ main {
 }
 
 .card-content > h2,
-.card-content > p,
 .card-content > a {
     margin: 0 0.5rem 0 0;
     flex-shrink: 0;
     white-space: nowrap;
     text-align: center;
+}
+
+/* Estilo para o parágrafo do ano de criação */
+.card-content > p {
+    white-space: inherit;
+}
+
+.card-description {
+    white-space: normal; /* Permite a quebra de linha, essencial para o line-clamp */
+    text-align: center; /* Mantém o texto centralizado */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte para caber melhor */
+    margin-bottom: 0.5rem; /* Adiciona espaço antes do link */
+    width: 100%; /* Garante que o parágrafo ocupe a largura do container */
+    /* Limita o texto a 3 linhas e adiciona "..." */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Efeito ao passar o mouse sobre o card */
+.card:hover .card-description {
+    -webkit-line-clamp: unset; /* Remove o limite de linhas */
+    max-height: 500px; /* Permite que a descrição se expanda */
 }
 
 .tags-container {

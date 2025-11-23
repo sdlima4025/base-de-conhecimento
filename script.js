@@ -40,7 +40,7 @@ function reiderizarCards(linguagens) {
         <img class="card-image" src="imagens/${imageName}" alt="Logo ${linguagem.nome}" onerror="this.onerror=null;this.src='imagens/codigo.png';" />
         <h2>${linguagem.nome}</h2>
         <p><strong>Ano de criação:</strong> ${linguagem.data_criacao}</p>
-        <p>${linguagem.descricao}</p>
+        <p class="card-description">${linguagem.descricao}</p>
         <a href="${linguagem.link}" target="_blank" rel="noopener noreferrer">Acessar documentação</a>
       </div>
     `;
